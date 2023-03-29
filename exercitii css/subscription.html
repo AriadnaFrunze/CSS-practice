@@ -38,23 +38,67 @@
             color: white;
             
         }
+        .circle {
+            border: 3px solid gray ;
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            background-color: white;
+            display: inline-block;
+            transform: translateY(15px);
+
+        }
+        #input-checkbx {
+            display: none;
+        }
+        input:checked + .circle {
+             border: 3px solid  #33ccff ;
+             background-image: radial-gradient( #33ccff 50%, white 51%);
+        }
+        .btn {
+            /* FONT */
+            font-size: 30px;
+            font-weight: bold;
+            /* BOX */
+            padding: 20px 40px;
+            border: 3px solid blue;
+            border-radius: 50px;
+            /* BACKGROUND */
+            background-image: linear-gradient(#33adff, #005c99, #33adff);
+            color: white;
+
+        }
+        .btn:hover {
+            background-image: linear-gradient(#2990d4, #01385e, #2990d4);
+            border: 4px solid #052942;
+            color: antiquewhite;
+
+        }
+       
     </style>
 </head>
 <body>
     
     <form action="" id="subscribe-form">
         <h2 class="form-heading">Join our newsletter list</h2>
-        <label>
+       
             <input type="text"
             placeholder="e.g:ari.frunze@example.com"
-            required
-            autofocus
+            
             class="input-email"
             >
-        </label>
+        
         <button class="button-subscribe">SEND</button><br>
-        <input type="checkbox" required ><a href="" class="terms"> I agree with the terms and conditions</a>
+        <label>
+        <input type="checkbox" required  id="input-checkbx">
+        <div class="circle"></div>
+        <a href="" class="terms"> I agree with the terms and conditions</a>
+        </label><br><br>
+        <button class="btn">
+            Terms
+        </button>
     </form>
-    
+
+
 </body>
 </html>
