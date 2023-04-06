@@ -42,6 +42,12 @@
         #dna .gene:nth-child(10) {
             border-bottom:none;
         }
+        #dna .gene:nth-child(10)::before {
+            display: none;
+        }
+        #dna .gene:nth-child(10)::after {
+            display: none;
+        }
         #dna .gene:nth-child(1) {
             animation: rotateGene 5s infinite;
             animation-delay: 0s;
