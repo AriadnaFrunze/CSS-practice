@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Effects | Horizontal</title>
+    <style>
+        body {
+            background-color: #122;
+        }
+        #ImageEffects {
+            width: 600px;
+            height: 400px;
+            border: 3px solid white;
+            margin: 170px auto;
+            background-image: url(316-600x400-gray.jpg);
+        }
+        #ImageEffects .slide {
+            width: 300px;
+            height: 400px;
+            background-image: url(316-600x400.jpg);
+            border-right: 3px solid white;
+        }
+        #ImageEffects .slide a {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            transform: translateX(286px) translateY(200px);
+        }
+        #right:target .slide {
+            width: 500px;
+            transition: .5s;
+        }
+        #right:target .slide a {
+            transform: translateX(486px) translateY(200px);
+            transition: .5s;
+        }
+        #left:target .slide {
+            width: 100px;
+            transition: .5s;
+        }
+        #left:target .slide a {
+            transform: translateX(86px) translateY(200px);
+            transition: .5s;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="left">
+      <div id="right">
+    
+        <div id="ImageEffects">
+            <div class="slide">
+                <a href="#left">◀</a>
+                <a href="#right">▶</a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+    
+</body>
+</html>
