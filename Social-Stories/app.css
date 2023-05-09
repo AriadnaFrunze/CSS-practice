@@ -1,0 +1,38 @@
+/* common styles */
+html {
+    height: 100%;
+} 
+body {
+   background-color: #345;
+   margin: 0; 
+   height: 100%;
+}
+
+/* stories component styles */
+.stories {
+    border: 1px dotted white;
+    height: 33.3%;
+    white-space: nowrap;
+}
+.stories .slide {
+    width: 23%;
+    height: 100%;
+    margin-right: 1%;
+    background-color: #fff;
+    display: inline-block;
+}
+.stories .slide:nth-child(1) {
+    background-image: url(images/avatar1.png);
+}
+.stories .slide:nth-child(2) {
+    background-image: url(images/1068-300x600.jpg);
+}
+.stories .slide:nth-child(3) {
+    background-image: url(images/528-300x600.jpg);
+}
+.stories .slide:nth-child(4) {
+    background-image: url(images/593-300x600.jpg);
+}
+.stories .slide:nth-child(5) {
+    background-image: url(images/65-300x600.jpg);
+}
